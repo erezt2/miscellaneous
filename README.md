@@ -18,3 +18,8 @@ Very simple and generic texting app. it doesnt save messages between sessions, b
 ## File Transfer
 
 This project is barely considered enough to be included here. nothing special about it, it just allows to transfer files such as text files or images.
+
+## Board Game
+
+very old and very ugly html site that includes chess, checkers and tic-tac-toe. it functions correctly (besides chess not having en-passent) but controls look bad
+
