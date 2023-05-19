@@ -1,0 +1,68 @@
+&help
+{0}
+type '{PREFIX}start' to start a game
+
+type '{PREFIX}settings bot' to change the bot settings
+
+type '{PREFIX}settings shiritori' to change the game's settings'
+&start-convo
+write yes if you wish to also participate or no if you don't, and mention all of the users who will be participating in the game in order.
+
+MENTION THEM, dont just write their name, eg. '{PREFIX}yes @userone#1234 @usertwo#4321'|
+reply ending restriction.
+
+eg. replying with '{PREFIX}E AT' will create a game where any users who use words that end with either E or AT will be disqualified.
+
+its possible to send just '$' for no ending restriction|
+reply time limit per word in seconds.
+
+eg. '{PREFIX}4.5', '{PREFIX}3'|
+game created in a thread of this channel.
+
+[MENTION] should send the first word to start the game.
+
+the turn order is:
+[ORDER]
+
+you can't end words with: [END]
+
+time limit per word: [TIME] seconds
+&timed-out
+{0} has timed out. 
+conversation has ended.
+&rules
+{0}
+there is a set turn order that is decided by whomever created the game.
+
+on each turn, players need to send a word that starts with the last letter of the previus words.
+
+players need to write such word within the set timit limit.
+
+its possible to add constraint on player so their words can't end with a certain letter/ combination.
+
+if someone sends an invalid word you have to use the last letter of the word of the last person.
+
+players can join each game more than once.
+
+add the shiritori bot to the game to get fucked in lmao.
+
+if the shiritori bot goes first he will wait exactly 10 seconds before starting.
+&game-ended
+game ended!
+
+scores:
+[SCORES]
+
+send '$again' to play again
+&game-restarted
+game restarted in this thread
+
+[MENTION] should send the first word
+
+the turn order is:
+[ORDER]
+
+you can't end words with: [END]
+
+time limit per word: [TIME] seconds
+&end
