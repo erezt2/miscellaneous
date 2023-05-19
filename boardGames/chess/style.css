@@ -1,0 +1,156 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 2vh;
+}
+
+body {
+  background-color: #000018;
+  overflow-y: hidden;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+}
+
+header a {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+header h1 {
+  font-size: 8vh;
+}
+
+#board {
+  margin: 0px auto;
+  margin-top: 8.5vh;
+  color: white;
+  border-spacing: 0px;
+  border: 3px solid white;
+}
+
+#board td {
+  width: 8.5vh;
+  height: 8.5vh;
+  text-align: center;
+  font-size: 5vh;
+  color: white;
+  position: relative;
+  transition-duration: 0.2s;
+}
+
+#board td:first-child, #board td:last-child {
+  font-size: 1.25vh;
+  width: 3vh;
+  border: 1px solid white;
+}
+
+#board tr:first-child td, #board tr:last-child td {
+  font-size: 1.25vh;
+  height: 3vh;
+  border: 1px solid white;
+}
+
+#contain {
+  position: relative;
+  top: calc(-3px - 46vh);
+  left: calc(30px + 50% + 46vh);
+  transform: translateX(-50%);
+  display: inline-block;
+}
+
+#movement_list {
+  width: 10.5vh;
+  overflow-y: scroll;
+  height: calc(18vh + 10px);
+  border: 3px solid white;
+  color: white;
+  text-align: center;
+}
+
+.black-pawn {
+  background: url("resources/black-pawn.png");
+  background-size: cover;
+}
+
+.black-bishop {
+  background: url("resources/black-bishop.png");
+  background-size: cover;
+}
+
+.black-knight {
+  background: url("resources/black-knight.png");
+  background-size: cover;
+}
+
+.black-rook {
+  background: url("resources/black-rook.png");
+  background-size: cover;
+}
+
+.black-queen {
+  background: url("resources/black-queen.png");
+  background-size: cover;
+}
+
+.black-king {
+  background: url("resources/black-king.png");
+  background-size: cover;
+}
+
+.white-pawn {
+  background: url("resources/white-pawn.png");
+  background-size: cover;
+}
+
+.white-bishop {
+  background: url("resources/white-bishop.png");
+  background-size: cover;
+}
+
+.white-knight {
+  background: url("resources/white-knight.png");
+  background-size: cover;
+}
+
+.white-rook {
+  background: url("resources/white-rook.png");
+  background-size: cover;
+}
+
+.white-queen {
+  background: url("resources/white-queen.png");
+  background-size: cover;
+}
+
+.white-king {
+  background: url("resources/white-king.png");
+  background-size: cover;
+}
+
+.white {
+  background-color: white;
+}
+
+.pointer {
+  cursor: pointer;
+  background-color: #60FF60;
+}
+
+.selected {
+  background-color: #60FF60;
+}
+
+.option-block {
+  border: 3px solid red;
+}
+
+.option-block-selected {
+  cursor: pointer;
+  background-color: red;
+}

@@ -1,0 +1,82 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000018;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+}
+
+header a {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+
+header h1 {
+  font-size: 8vh;
+}
+
+#board table {
+  margin: 0px auto;
+  margin-top: 8.5vh;
+  color: white;
+  border-spacing: 0px;
+  border: 3px solid white;
+}
+
+#board td {
+  width: 8.5vh;
+  height: 8.5vh;
+  text-align: center;
+  font-size: 5vh;
+  color: red;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  transition-duration: 0.2s;
+}
+
+.black-pawn {
+  background: url("resources/black-pawn.png");
+  background-size: cover;
+}
+
+.black-bishop {
+  background: url("resources/black-bishop.png");
+  background-size: cover;
+}
+
+.white-pawn {
+  background: url("resources/white-pawn.png");
+  background-size: cover;
+}
+
+.white-bishop {
+  background: url("resources/white-bishop.png");
+  background-size: cover;
+}
+
+.pointer {
+  cursor: pointer;
+  background-color: #60FF60;
+}
+
+.selected {
+  background-color: #60FF60;
+}
+
+.option-block {
+  border: 3px solid red;
+}
+
+.option-block-selected {
+  cursor: pointer;
+  background-color: red;
+}

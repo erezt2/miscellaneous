@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>chess</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">back</a>
+      <h1 id="title">chess</h1>
+    </header>
+    <div>
+      <table id="board">
+        <tr>
+          <td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td></td>
+        </tr>
+        <tr>
+          <td>8</td><td class="black-rook"></td><td class="black-knight"></td><td class="black-bishop"></td><td class="black-queen"></td><td class="black-king"></td><td class="black-bishop"></td><td class="black-knight"></td><td class="black-rook"></td><td>8</td>
+        </tr>
+        <tr>
+          <td>7</td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td class="black-pawn"></td><td>7</td>
+        </tr>
+        <tr>
+          <td>6</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>6</td>
+        </tr>
+        <tr>
+          <td>5</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>5</td>
+        </tr>
+        <tr>
+          <td>4</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>4</td>
+        </tr>
+        <tr>
+          <td>3</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>3</td>
+        </tr>
+        <tr>
+          <td>2</td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td class="white-pawn"></td><td>2</td>
+        </tr>
+        <tr>
+          <td>1</td><td class="white-rook"></td><td class="white-knight"></td><td class="white-bishop"></td><td class="white-queen"></td><td class="white-king"></td><td class="white-bishop"></td><td class="white-knight"></td><td class="white-rook"></td><td>1</td>
+        </tr>
+        <tr>
+          <td></td><td>A</td><td>B</td><td>C</td><td>D</td><td>E</td><td>F</td><td>G</td><td>H</td><td></td>
+        </tr>
+      </table>
+      <div id="contain">
+        <div id="movement_list">
+
+        </div>
+        <button type="button" name="button" onclick="undo()">undo</button>
+        <button type="button" name="button" onclick="reload()">reset</button>
+      </div>
+    </div>
+
+    <script charset="utf-8" src="script.js"></script>
+  </body>
+</html>

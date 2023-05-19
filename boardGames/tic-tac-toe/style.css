@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000018;
+}
+
+header {
+  position: relative;
+  background-color: white;
+  height: 100px;
+  width: 100%;
+  margin-bottom: 10%;
+  padding: 15px;
+  text-align: center;
+}
+
+header p {
+  display: inline-block;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 5px;
+  font-size: 30px;
+  color: white;
+}
+
+header a {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+}
+
+header > h1 {
+  font-size: 52px;
+}
+
+#score {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  top: 5px;
+}
+
+#score > p {
+  position: absolute;
+  left: 50%;
+  top: 15px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 48px;
+}
+
+#score span {
+  color: white;
+  position: absolute;
+  top: 10px;
+  font-size: 30px;
+}
+
+#score span .p-text {
+  position: relative;
+  top: 8px;
+  font-size: 16px;
+  background-color: red;
+  padding: 1px;
+}
+
+#score span .score-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30px;
+  font-size: 36px;
+}
+
+.player1 {
+  left: calc(50% - 100px);
+  transform: translateX(-50%);
+}
+
+.player2 {
+  left: calc(50% + 100px);
+  transform: translateX(-50%);
+}
+
+#board table {
+  margin: 0px auto;
+  color: white;
+  border-spacing: 0px;
+  border: 3px solid white;
+}
+
+#board td {
+ border: 1px solid white;
+  width: 100px;
+  height: 100px;
+  transition-duration: 0.5s;
+  text-align: center;
+  font-size: 80px;
+  cursor: default;
+}
+
+#board td:not(.selected):hover {
+  background-color: #A0A0B0;
+  cursor: pointer;
+}
+
+#message {
+  color: white;
+  text-align: center;
+  margin: 15px 0px;
+  font-size: 36px;
+}

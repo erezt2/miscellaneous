@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <title>tic tac toe</title>
+  </head>
+  <body>
+    <header>
+      <a href="../index.html">back</a>
+      <h1>tic-tac-toe</h1>
+      <button onclick="reset()">reset</button>
+      <button onclick="resetScore()">reset score</button>
+      <button onclick="switching()" id="switchClicker">switch: true</button>
+      <p id="player1IsX">player1 is always X</p>
+    </header>
+    <div id="score">
+      <span class="player1"><p class="p-text">player1</p><p class="score-text" id="player1Score">0</p></span>
+      <p>score</p>
+      <span class="player2"><p class="p-text">player2</p><p class="score-text" id="player2Score">0</p></span>
+    </div>
+    <div id="board">
+      <table>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div id="message">
+      player1's turn!
+    </div>
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
